@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para o Amor da Minha Vida</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    header {
+      position: fixed;
+
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffd1dc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 140px 20px 40px;
+      background: transparent;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ffd1dc;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin-top: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      line-height: 1.6;
+    }
+
+    .hearts {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff4d6d;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+      opacity: 0.6;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff4d6d;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+      }
+    }
+
+    footer.footer {
+      
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #ffd1dc;
+      font-size: 0.9em;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="heart.html">Presentes</a>
+      <a href="sobrenos.html">Sobre Nós</a>
+    </nav>
+  </header>
+   <audio id="bg-music" src="minhacura.mp3" autoplay></audio>
+
+  <div class="container">
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>Feliz Dia dos Namorados 💖</h1>
+    <p>
+      Pensei várias vezes em pedir para o ChatGPT fazer um texto totalmente bonito e perfeito para colocar aqui, 
+      porém não refletiria nosso relacionamento realmente, porque ele está longe de ser perfeito — e eu prefiro assim, 
+      imperfeito e real, longe do artificial desse século...
+      <br><br>
+      Quando você entrou na minha vida eu pensei que seria um caos, pelo fato de sermos muito diferentes um do outro: 
+      forma de pensar, agir e etc. Mas você chegou organizando tudo, assim como faz no meu quarto nos dias de quinta-feira, 
+      dobrando minhas roupas e arrumando minha bagunça, que muitas vezes reflete como minha cabeça fica quando eu penso no futuro kkkk.
+      <br><br>
+      Mas enfim, brigamos algumas vezes e devagar fomos nos adaptando com o tempo. E assim você virou meu porto seguro. 
+      Eu aguento uma semana inteira de estresse e pensamentos ruins na cabeça, desde que sua presença nos finais de semana seja certeira — 
+      sempre me contando como foi seu dia, me dando alguns puxões de orelha e sempre dizendo que vai me apoiar independente do que eu estiver passando...
+      <br><br>
+      Você é muito importante pra mim, e como eu não quero me alongar muito: aproveite sua lembrancinha, fiz com muito carinho. 
+      Tomara que goste e que nenhum coraçãozinho saia do lugar porque deu um trabalhão kkkkkkkk.
+    </p>
+  </div>
+
+  <div class="hearts">
+    <script>
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+        heart.style.opacity = 0.4 + Math.random() * 0.5;
+        document.querySelector('.hearts').appendChild(heart);
+      }
+    </script>
+  </div>
+
+  <footer class="footer">Esdras Reis</footer>
+<script src="script2.js"></script>
+</body>
+</html>

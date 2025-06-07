@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para o Amor da Minha Vida</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffd1dc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      padding-top: 120px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #valentines {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="heart.html">Presentes</a>
+      <a href="sobrenos.html">Sobre Nós</a>
+    </nav>
+  </header>
+
+  <audio id="bg-music" src="prefiro voce.mp3" loop></audio>
+
+  <div class="container">
+    <h1 id="typed-text"></h1>
+    <button id="start-button">Clique para começar 💖</button>
+  </div>
+
+  <div id="hearts-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<footer class="footer">Esdras Reis</footer>
+</body>
