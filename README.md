@@ -5,4 +5,4 @@ Esse projeto é chamado de FRANKSTEIN por ser um projeto que eu fiz para a minha
 <img src="Captura de tela 2025-06-07 013250.png">
 <br>
 <br>
-<p>E aqui é o link para quem quiser visitar https://stellar-mochi-2c5967.netlify.app/</p>
+<p>E aqui é o link para quem quiser visitar -> https://stellar-mochi-2c5967.netlify.app/</p>
